@@ -1,0 +1,20 @@
+# TypeScript output directory
+/out
+
+# Node modules
+/node_modules
+
+# Log files
+*.log
+
+# VSCode settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+
+# Test files and directories
+/tests
+
+# Temporary files
+*.tmp

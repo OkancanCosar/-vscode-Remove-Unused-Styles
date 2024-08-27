@@ -1,0 +1,40 @@
+{
+  "name": "remove-unused-styles",
+  "displayName": "Remove Unused Styles",
+  "description": "Automatically removes unused styles in React Native components.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.removeUnusedStyles"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.removeUnusedStyles",
+        "title": "Remove Unused Styles"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.removeUnusedStyles",
+        "key": "shift+alt+g",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0"
+  }
+}
